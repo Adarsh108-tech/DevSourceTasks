@@ -3,21 +3,23 @@ import Random from "./random";
 function Android() {
   const textValues = [
     "Abhisar Tyagi",
-    "Aadesh Balyan",
-    "Adarsh Tiwari",
     "Akash",
     "Anurag Kumar Singh",
-    "Aryan",
-    "Chhavi Goyal",
-    "Dhruv Chhikara",
-    "Khushaan Kapil",
     "Krishna Sharma",
     "Krrish Khowal",
-    "Manvi Singhal",
     "Satyajit",
-    "Yash Mishra"
+    "Dhruv Chhikara",
+    "Manvi Singhal",
+    "Aryan",
+    "Aadesh Balyan",
+    "Khushaan Kapil",
+    "Adarsh Tiwari",
+    "Yash Mishra",
+    "Chhavi Goyal",
+    "Stanzin Saskyong Namgail",
+    "Arshpreet Singh",
+    "Ved Prakash Singh"
   ];
-
   return (
     <ul className="flex items-center text-white w-[100%] md:w-[100%] h-[100%] flex-col justify-center text-4xl z-10 gap-10 Trial-Bold">
       {textValues.map((text, index) => (

@@ -1,42 +1,46 @@
 import "../font.css";
 import { Link } from "react-router-dom";
-import Random from "./random";
-
 
 function AndroidTask({ Tasks }) {
   return (
-    <div className="border-2 border-white text-white p-10 w-[100%] rounded-lg backdrop-blur-sm">
-      <h1 className="Trial-Black text-6xl text-center">Android Task</h1>
-      <div className="p-10 flex flex-col items-start gap-10 text-2xl">
+    <div className="border-2 border-white text-white p-6 sm:p-10 w-full rounded-lg backdrop-blur-sm">
+      <h1 className="Trial-Black text-4xl sm:text-6xl text-center">Android Task</h1>
+      <div className="p-6 sm:p-10 flex flex-col items-start gap-6 sm:gap-10 text-lg sm:text-2xl">
         {Tasks.map((task, index) => (
-          <div key={index} className="w-[100%] border-b-2 border-gray-500 pb-5 mb-5 flex flex-col gap-5">
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Level</p>
-              <p className="w-[50%]"><Random Text={task.level}/></p>
+          <div
+            key={index}
+            className="w-full border-b-2 border-gray-500 pb-5 flex flex-col gap-6 sm:gap-10 mb-6"
+          >
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Level</p>
+              <p className="sm:w-1/2">{task.level}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Task</p>
-              <p className="w-[50%]">{task.Task}</p>
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Task</p>
+              <p className="sm:w-1/2">{task.Task}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Description</p>
-              <p className="w-[50%]">{task.Desc}</p>
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Description</p>
+              <p className="sm:w-1/2">{task.Desc}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Additional Feature</p>
-              <p className="w-[50%]">{task.AdditionalFeature}</p>
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Additional Feature</p>
+              <p className="sm:w-1/2">{task.AdditionalFeature}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Starting Date</p>
-              <p className="w-[50%]">{task.StartDate}</p>
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Starting Date</p>
+              <p className="sm:w-1/2">{task.StartDate}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Next Task On</p>
-              <p className="w-[50%]">{task.EndDate}</p>
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Next Task On</p>
+              <p className="sm:w-1/2">{task.EndDate}</p>
             </div>
-            <div className="flex w-[100%] justify-between gap-10">
-              <p>Repo Link</p>
-              <Link to={task.RepoLink} className="w-[50%] text-blue-400 underline">
+            <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-10">
+              <p className="font-bold">Repo Link</p>
+              <Link
+                to={task.RepoLink}
+                className="sm:w-1/2 text-blue-400 underline break-all"
+              >
                 {task.RepoLink}
               </Link>
             </div>

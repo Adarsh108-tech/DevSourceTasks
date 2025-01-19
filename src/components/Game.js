@@ -2,13 +2,15 @@ import Random from "./random";
 
 function Game() {
   const textValues = [
-    "Aadi Jain",
-    "Akshat Chowdhary",
-    "Chhavi Goyal",
     "Satyajit",
-    "Sonu Yadav",
+    "Adarsh Tiwari",
+    "Yash Mishra",
+    "Chhavi Goyal",
+    "Aadi Jain",
     "Vansh Kumar",
-    "Yash Mishra"
+    "Akshat Chowdhary",
+    "Sonu Yadav",
+    "Ved Prakash Singh"
   ];
 
   return (
