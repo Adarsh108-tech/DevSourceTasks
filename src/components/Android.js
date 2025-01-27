@@ -21,7 +21,7 @@ function Android() {
     "Ved Prakash Singh"
   ];
   return (
-    <ul className="flex items-center text-white w-[100%] md:w-[100%] h-[100%] flex-col justify-center text-4xl z-10 gap-10 Trial-Bold">
+    <ul className="flex items-center text-white w-[100%] md:w-[100%] h-[100%] flex-col justify-center text-4xl z-10 gap-10 Trial-Bold backdrop-blur-xs">
       {textValues.map((text, index) => (
         <li
           key={index}

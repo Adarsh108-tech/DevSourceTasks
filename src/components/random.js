@@ -48,8 +48,8 @@ const Random = ({ Text }) => {
       style={{
         fontFamily: "'Space Mono', monospace",
         fontSize: "",
-        padding: "0 clamp(1rem, 2vw, 3rem)",
-        borderRadius: "clamp(0.4rem, 0.75vw, 1rem)",
+        padding: "0 clamp(1rem, 2vw, 2rem)",
+        borderRadius: "clamp(0.4rem, 0.75vw, 0.5rem)",
         transition: "background-color 400ms, color 400ms",
       }}
     >

@@ -13,69 +13,87 @@ function App() {
   const TaskData = [
   [
     {
-      Task : "Simple Calculator Application in Kotlin",
-      Desc : "Create a calculator app to perform all types of mathematical operations with a clean UI.",
-      AdditionalFeature : "Try to add graphs for visualization.",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
-      RepoLink : "https://github.com/DevSource-2025/Simple-Calculator-App-Android",
+      Task : "Recipe Finder Application",
+      Desc : "A search app that fetches recipes based on ingredients using an external API.",
+      AdditionalFeature : "at search bar add a functionality to show the auto search",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
+      RepoLink : "https://github.com/DevSource-2025/Recipe-Finder",
       level : "beginner"
     },    
     {
-      Task : "Movie Discovery Mobile App",
-      Desc : "Build a mobile app using any no-code technology of your choice. Add features like Wishlist functionality A 'Know More' search bar",
+      Task : "Make a Movie Discovery Mobile App on kotlin or flutter",
+      Desc : "A movie discovery app with features like movie search, watchlist, and recommendations. Tech Stack: Kotlin, Retrofit for API integration, Room Database, Jetpack Compose.",
       AdditionalFeature : "Add filters to refine searches.",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
       RepoLink : "https://github.com/DevSource-2025/Movie-Discovery-Mobile-App",
       level : "Silver"
     },
   ],
   [
     {
-      Task : "Portfolio Website",
-      Desc : "Build a stunning portfolio to showcase your profile with a clean and engaging UI.",
-      AdditionalFeature : "Add links to your projects, LinkedIn, and GitHub. Include cool animations to make the site interactive.",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
+      Task : "Blogging Website",
+      Desc : "Build a stunning blogging website containing multiple pages to display all blogs also it should have buttons to see next and previous blogs ",
+      AdditionalFeature : "add a different page where a person can edit or create a new blog ( a blog editor )",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
       RepoLink : "https://github.com/DevSource-2025/PortfolioWebSite",
       level : "beginner"
 
     },    
     {
-      Task : "Weather App with API Integration",
-      Desc : "Allow users to view current weather for their location and search weather for other locations.",
-      AdditionalFeature : "Add a weather timeline feature.",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
-      RepoLink : "https://github.com/DevSource-2025/Weather-App-Web",
-      level : "bronze"
+      Task : "make any Ecommerce website clone ",
+      Desc : "A fully functional e-commerce platform with product listings, a shopping cart, and a checkout process. Tech Stack: ReactJS, Node.js, MongoDB, Stripe for payments, JWT for authentication.",
+      AdditionalFeature : "Add a functionality to see the location of a near by shop",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
+      RepoLink : "https://github.com/DevSource-2025/E-commerce-Website",
+      level : "Gold"
     }, 
     {
-      Task : "Task Manager with CRUD Operations",
+      Task : "Make a Sign up and login authorization in MERN using jwt tokens , bcrypt and other libraries",
       Desc : "Make a web application using Mongo db as database , Express js as server , React as frontend library , and node js as runtime enviroment",
-      AdditionalFeature : "Implement a work and rest manager.For HTML, CSS, JS Developers: Weather App with API Integration",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
-      RepoLink : "https://github.com/DevSource-2025/Task-Manger-Web",
+      AdditionalFeature : "only the authorized user can obtain certain data",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
+      RepoLink : "https://github.com/DevSource-2025/MERN-Authorization",
       level : "Silver"
     }
   ],[
     {
-      Task : "2D Platformer Game in Godot",
+      Task : "make a 2D Platformer Game in Godot or Unity with enemies",
       Desc : "Develop a 2D platformer game with animations, movement physics, and jumping.",
       AdditionalFeature : "Add health bars or health points.(Optional but challenging) Implement a weapon-changing mechanism.",
-      StartDate : "19-01-25",
-      EndDate : "26-01-25",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
       RepoLink : "https://github.com/DevSource-2025/2D-Platformer-Game",
-      level : "beginner"
+      level : "silver"
+    },
+    {
+      Task : "make a 3D fps Game in godot or unity",
+      Desc : "Develop a 3D platformer shooter game where a character can shoot approaching enemeies or target.",
+      AdditionalFeature : "Increase the player coins as the target gets hit.",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
+      RepoLink : "https://github.com/DevSource-2025/3D-FPS-Game",
+      level : "silver"
+    },
+    {
+      Task : "make a 2D shooter Game in godot or unity",
+      Desc : "Develop a 2D game where a character shoots approaching enemeies.",
+      AdditionalFeature : "Add health bars or health points.(Optional but challenging) Implement a weapon-changing mechanism.",
+      StartDate : "28-01-25",
+      EndDate : "06-02-25",
+      RepoLink : "https://github.com/DevSource-2025/2d-shooter-game",
+      level : "bronze"
     }
   ]
   ];
 
   return (
     <div className="absolute min-h-screen w-full p-4 box-border bg-zinc-800 overflow-y-hidden">
-      <BackGround/>
+      <BackGround className="-z-10"/>
       <nav className="flex w-full justify-between items-center mb-8">
         <img
           src={logo || "/placeholder.svg"}
